@@ -66,8 +66,6 @@ if (util.getWhoBuild() == "[]") {
 
                         mkdir -p ${HOME}/go
                         go get -u github.com/jstemmer/go-junit-report
-                        sudo yum install -y python38
-                        sudo ln -s /usr/bin/python3.8 /usr/bin/python
                     """
                 }
             }
