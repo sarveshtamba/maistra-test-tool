@@ -49,6 +49,14 @@ spec:
       labels:
         app: sleep
     spec:
+      dnsPolicy: None
+      dnsConfig:
+        nameservers:
+          - 172.30.0.10
+        searches:
+          - openshift-console.svc.cluster.local
+          - svc.cluster.local
+          - cluster.local    
       serviceAccountName: sleep
       containers:
       - name: sleep
